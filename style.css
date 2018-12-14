@@ -16,15 +16,47 @@ html, body {
 
 ul, nav {
     list-style: none;
+    
+
 }
 
-a {
+header a {
     text-decoration: none;
     opacity: 0.75;
     color: #fff;
 }
+
+main a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #000;
+
+    
+}
+
+
+main nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+   
+}
+
+main nav ul a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+main nav ul a.current {
+    background: #000;
+}
+
 a: hover {
     opacity: 1;
+}
+
+h3 {
+    padding: 0.1rem 1rem;
 }
 /* Layout */
 
@@ -34,7 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px 0;
+    padding: 30px 80px 0;
     color: #fff;
 
 }
@@ -48,11 +80,12 @@ header nav li {
     margin: 0 15px;
 }
 
+
 .flex-header {
     background-color: #7FB3D5;
-    padding-top: 3rem;
-    padding-bottom: 3rem; 
-    height: 1px;
+    padding-top: 1rem;
+    padding-bottom: .5rem; 
+
 }
 
 .flex-main {
@@ -63,7 +96,8 @@ header nav li {
 .flex-nav {
     background-color: #D4E6F1;
     padding-top: 3rem;
-    flex: 1 1 5rem;
+    flex: 1 1 1rem;
+    
 }
 
 .flex-article {
@@ -75,14 +109,16 @@ header nav li {
 .flex-aside {
     background-color: #D4E6F1;
     padding-top: 3rem;
-    flex: 1 1 5rem;
+    flex: 1 1 1rem;
+    text-align: justify;
 }
 
 .flex-footer {
     background-color: #7FB3D5;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    height: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #EAF2F8;
+    
 }
 
 @media all and (max-width: 540px) {
@@ -90,7 +126,7 @@ header nav li {
         flex-direction: column;
     }
 }
-/* Login form */
+/* Login and sign up forms */
 
 form {
 	margin: 0 auto;
