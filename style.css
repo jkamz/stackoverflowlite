@@ -1,10 +1,96 @@
+
+* {
+    margin: 2px;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
 	color: #444; 
 	font-family: "Helvetica Neue", Helvetica, sans-seriff;
-	background: #f0f0f0;
+    background: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+}
+a: hover {
+    opacity: 1;
+}
+/* Layout */
+
+header {
+    /* position: absolute; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    color: #fff;
+
+}
+
+header nav {
+    display: flex;
+    margin-right: -15px;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+.flex-header {
+    background-color: #7FB3D5;
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+    height: 1px;
+}
+
+.flex-main {
+    display: flex;
+    flex: 1;
+}
+
+.flex-nav {
+    background-color: #D4E6F1;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+
+.flex-article {
+    background-color: #EAF2F8;
+    padding-top: 3rem;
+    flex: 3 3;
+}
+
+.flex-aside {
+    background-color: #D4E6F1;
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+
+.flex-footer {
+    background-color: #7FB3D5;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 1px;
+}
+
+@media all and (max-width: 540px) {
+    .flex-main {
+        flex-direction: column;
+    }
+}
+/* Login form */
 
 form {
 	margin: 0 auto;
@@ -77,3 +163,4 @@ input[type=submit] {
     width: 80px;
     height: 30px;
 }
+
